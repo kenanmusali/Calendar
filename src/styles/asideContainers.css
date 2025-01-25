@@ -2,17 +2,17 @@
   position: relative;
   left: 0;
   height: 100%;
-  width: 248px;
-  min-width: 248px;
-  background-color: var(--black1);
+  width: 17.2rem;
+  min-width: 17.2rem;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   -webkit-box-flex: 0;
   flex: none;
   z-index: 901;
   will-change: margin-left;
   transform-origin: 0 0;
+  
+
 }
 
 .sidebar-transition {

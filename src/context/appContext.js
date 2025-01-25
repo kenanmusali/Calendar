@@ -4,9 +4,9 @@ import storage from '../utilities/storage';
 
 class Context {
   constructor() {
-    this.colorScheme = 'dark';
+    this.colorScheme = 'light';
     this.component = 'month';
-    this.sidebarState = 'hide';
+    this.sidebarState = 'show';
     this.date = new Date();
     this.gmt = new Date().getTimezoneOffset() / 60;
 
@@ -147,8 +147,8 @@ class Context {
   }
 
   getSidebarState() {
-    return this.sidebarState || 'hide';
-    // return Context.getLocalSidebarState() || 'hide';
+    return this.sidebarState || 'show';
+
   }
   /* **************************************** */
 

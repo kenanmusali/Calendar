@@ -29,7 +29,7 @@
   background-color: var(--black0)
 }
 
-.menu::after {
+/* .menu::after {
   background-color: var(--mediumgrey2);
   border-radius: 4px;
   content: attr(data-tooltip);
@@ -44,7 +44,7 @@
   z-index: -1;
   opacity: 0;
   transition: opacity 200ms ease-in-out;
-}
+} */
 
 .logo,
 .menu:hover::after,
@@ -94,7 +94,7 @@
   padding-right: 24px;
 }
 
-.btn-today,
+
 .header-title,
 .prev,
 .next,
@@ -106,7 +106,7 @@
 }
 
 .btn-today {
-  height: 32px;
+  /* height: 32px;
   width: 65px;
   font-weight: 400;
   margin-left: 16px;
@@ -114,8 +114,8 @@
   position: relative;
   font-size: 14px;
   letter-spacing: 0.18px;
-  /* border: 1px solid var(--black2); */
-  border: 1px solid var(--mediumgrey1);
+  border: 1px solid var(--black2);
+  border: 1px solid var(--mediumgrey1); */
 }
 
 .group-right {
@@ -170,7 +170,7 @@
 .btn-today::after,
 .next::after,
 .prev::after {
-  font-family: var(--primaryFont) !important;
+  /* font-family: var(--primaryFont) !important;
   align-items: center;
   background-color: var(--mediumgrey2);
   border-radius: 4px;
@@ -190,7 +190,7 @@
   width: 138px;
   z-index: -1;
   opacity: 0;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out; */
 }
 
 .next:hover::after,
@@ -205,6 +205,14 @@
   margin: 0 8px 0 0;
   position: relative;
   width: auto;
+  
+}
+
+.datetime-content--title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--black);
+
 }
 
 .datetime-content,
@@ -238,7 +246,7 @@
 }
 
 .datetime-wrapper:hover {
-  background-color: var(--black0)
+  background-color: red
 }
 
 .datetime-inactive {

@@ -43,22 +43,40 @@
   display: block;
 }
 
+/* .divSpaceHeader{
+   height: 34px;
+   background-color: red;
+   width: 100%;
+} */
+
 .header {
-  background-color: var(--black1);
+  position: absolute;
+  /* position: absolute; */
+  /* background-color: var(--black1); */
   height: 64px;
+margin-top: 5rem;
+  /* background-color: RED; */
   
   min-height: 64px !important;
   overflow: visible;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  z-index: 197;
+  width: fit-content;
+
+    z-index: 197;
+   margin-left: 20rem;
   /* border-bottom: 1px solid var(--mediumgrey2); */
+
+
+
+  display: flex;
+  justify-content: flex-end; /* Move the div to the right */
+  align-items: center; /* Vertically center the div if it has content */
+  width: fit-content; /* Allow div to shrink to fit content */
 }
 
 .main {
   width: 100%;
-  height: calc(100% - 64px);
+  /* height: calc(100% - 64px); */
+  height: 100%;
   overflow: hidden;
   display: flex;
   background-color: var(--black1);
@@ -74,6 +92,7 @@
   flex: 1 1 auto;
   transition-duration: 300ms;
   -webkit-box-flex: 1;
+  position: relative;
 }
 
 .container__calendars::-webkit-scrollbar {
@@ -94,10 +113,13 @@
 
 .yearview,
 .dayview,
-.monthview {
+.monthview,
+.weekview {
   width: 100%;
-  height: 100%;
+  height: 80% !important;
   user-select: none;
+  position: absolute; /* Add relative positioning */
+  bottom: 0; /* Ensure they align at the bottom */
 }
 
 .listview {
